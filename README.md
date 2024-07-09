@@ -1,35 +1,56 @@
-markdown Copy code
+# AWS Data Hash Project
 
-AWS Data Hash Project
 This project provides tools to download datasets from AWS S3, compute hashes for each row, and save the processed datasets. It is designed to handle multiple datasets efficiently and store the results in a structured manner.
 
-Directory Structure
-Installation
-Clone the repository:
+## Directory Structure
 
-git clone https://github.com/your-username/aws_data_hash_project.git
-Navigate to the project directory:
 
-cd aws_data_hash_project
-Install the required packages:
 
-pip install -r requirements.txt
-Usage
-Download and Hash Datasets
-To download and hash datasets, run the main.py script:
 
-python scripts/main.py
-This script will:
+## Installation
 
-Download the datasets from the specified URLs.
-Compute a SHA256 hash for each row.
-Save the hashed datasets in the datasets directory.
-Individual Script Usage
-download_dataset.py
+1. Clone the repository:
+
+    ```sh
+    git clone https://github.com/your-username/aws_data_hash_project.git
+    ```
+
+2. Navigate to the project directory:
+
+    ```sh
+    cd aws_data_hash_project
+    ```
+
+3. Install the required packages:
+
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+## Usage
+
+### Download and Hash Datasets
+
+1. To download and hash datasets, run the `main.py` script:
+
+    ```sh
+    python scripts/main.py
+    ```
+
+    This script will:
+    - Download the datasets from the specified URLs.
+    - Compute a SHA256 hash for each row.
+    - Save the hashed datasets in the `datasets` directory.
+
+### Individual Script Usage
+
+#### `download_dataset.py`
+
 This script downloads a dataset from a given URL and saves it locally.
 
 Usage:
 
+```sh
 python scripts/download_dataset.py
 You will be prompted to enter the dataset URL and the path to save the dataset.
 
@@ -68,6 +89,3 @@ javascript
 Copy code
 
 Make sure to replace `your-username` with your actual GitHub username in the `Installation` section. This `README.md` file provides a comprehensive overview of the project, including installation, usage, and contribution guidelines.
-
-
-
